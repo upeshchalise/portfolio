@@ -1,31 +1,52 @@
+import Link from "next/link";
 import { FaReact } from "react-icons/fa";
 
 export const Navbar = () => {
   return (
     <>
       <section id="navbar">
-        <ul className="[&>_li]:flex [&>_li]:gap-2 [&>_li]:items-center [&>_li]:px-3 [&>_li]:py-2 [&>_li]:rounded-lg flex gap-2">
-          <li className="hover:bg-slate-800 hover:cursor-pointer">
-            <FaReact size={20} color="#87CEEB"/>
+      <ul className="flex gap-2">
+      <li>
+        <Link href={"/"}>
+          <p className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-slate-800 hover:cursor-pointer">
+            <FaReact size={20} color="#87CEEB" />
             home.tsx
-          </li>
-          <li className="hover:bg-slate-800 hover:cursor-pointer">
-            <FaReact size={20} color="#87CEEB"/>
+          </p>
+        </Link>
+      </li>
+      <li>
+        <Link href={"/about"}>
+          <p className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-slate-800 hover:cursor-pointer">
+            <FaReact size={20} color="#87CEEB" />
             about.tsx
-          </li>
-          <li className="hover:bg-slate-800 hover:cursor-pointer">
-            <FaReact size={20} color="#87CEEB"/>
+          </p>
+        </Link>
+      </li>
+      <li>
+        <Link href={"/blog"}>
+          <p className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-slate-800 hover:cursor-pointer">
+            <FaReact size={20} color="#87CEEB" />
             blog.tsx
-          </li>
-          <li className="hover:bg-slate-800 hover:cursor-pointer">
-            <FaReact size={20} color="#87CEEB"/>
+          </p>
+        </Link>
+      </li>
+      <li>
+        <Link href={"/projects"}>
+          <p className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-slate-800 hover:cursor-pointer">
+            <FaReact size={20} color="#87CEEB" />
             projects.tsx
-          </li>
-          <li className="hover:bg-slate-800 hover:cursor-pointer">
-            <FaReact size={20} color="#87CEEB"/>
+          </p>
+        </Link>
+      </li>
+      <li>
+        <Link href={"/contact"}>
+          <p className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-slate-800 hover:cursor-pointer">
+            <FaReact size={20} color="#87CEEB" />
             contact.tsx
-          </li>
-        </ul>
+          </p>
+        </Link>
+      </li>
+    </ul>
       </section>
     </>
   );
