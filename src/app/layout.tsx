@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Upesh Chalise",
-  description: "Upesh chalise - full stack developer",
+  description: "Upesh Chalise - full stack developer",
 };
 
 export default function RootLayout({
@@ -29,15 +29,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`font-mono antialiased bg-[#24262B] flex flex-col h-screen`}
+        className={`font-mono antialiased bg-[#24262B] flex flex-1 h-screen`}
       >
+        <div className="flex flex-1 min-h-screen flex-col">
+
         <Header />
 
-        <div className="flex h-full gap-3">
+        <div className="flex gap-3 flex-1 ">
           <SideNav />
 
           <main className="flex-1">
-            <div className="text-white flex gap-4 h-full ">
+            <div className="text-white flex gap-4">
               <Explorer />
               <div className="bg-[#181A1F] flex-1 rounded-md p-2 flex flex-col gap-3">
                 <Navbar />
@@ -45,6 +47,7 @@ export default function RootLayout({
               </div>
             </div>
           </main>
+        </div>
         </div>
       </body>
     </html>

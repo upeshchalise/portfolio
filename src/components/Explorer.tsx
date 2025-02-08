@@ -8,7 +8,7 @@ import { TbBrandNpm } from "react-icons/tb";
 export const Explorer = () => {
     return (
         <>
-        <section className="bg-[#181A1F]  rounded-md py-2 text-lg px-4 text-white" id="explorer-section">
+        <section className="bg-[#181A1F]  rounded-md py-2 text-lg px-4 text-white hidden sm:block min-h-screen" id="explorer-section">
         <div>EXPLORER</div>
         <ul className="[&>_li]:flex [&>_li]:gap-2 [&>_li]:items-center">
           <li className="flex gap-2 items-center">
