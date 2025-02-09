@@ -28,7 +28,7 @@ export const SideNav = () => {
             </Link>
           </li>
           <li className="hover:bg-[#181A1F]">
-            <Link href="https://www.linkedin.com/upeshchalise" target="_blank">
+            <Link href="https://www.linkedin.com/in/upesh-chalise-ab3b80243/" target="_blank">
               <Linkedin size={28} strokeWidth={1.25} />
             </Link>
           </li>
