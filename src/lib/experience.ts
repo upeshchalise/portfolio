@@ -4,7 +4,9 @@ export const Experince = [
         role: "Junior Web Developer",
         time: "Oct. 2023 - Present",
         description: [
-            "Contributed to an platform plus projet"
+            "Implemented responsive designs and modern UI components with Tailwind CSS",
+            "Worked with various databases including PostgreSQL and MongoDB",
+            "Worked in platform plus projet",
         ]
     },
     {
@@ -13,8 +15,7 @@ export const Experince = [
         time: "July 2023 - Sep 2023",
         description : [
             "Learned to develop web applications using Next.js, React, and Node.js",
-            "Implemented responsive designs and modern UI components with Tailwind CSS",
-            "Worked with various databases including PostgreSQL and MongoDB",
+           
         ]
     }
 ]
