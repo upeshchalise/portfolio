@@ -6,7 +6,7 @@ export const Experince = [
         description: [
             "Implemented responsive designs and modern UI components with Tailwind CSS",
             "Worked with various databases including PostgreSQL and MongoDB",
-            "Worked in platform plus projet",
+            "Worked in platform plus project",
         ]
     },
     {

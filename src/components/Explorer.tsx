@@ -203,7 +203,7 @@ export const Explorer = () => {
   return (
     <>
       <section
-        className="bg-[#181A1F]  rounded-md py-2 text-lg px-4 text-white hidden sm:block min-h-screen"
+        className="bg-[#181A1F]  rounded-md py-2 text-lg px-4 text-white hidden sm:block sm:min-h-screen min-h-full"
         id="explorer-section"
       >
         <div>EXPLORER</div>

@@ -19,6 +19,11 @@ import { Navbar } from "@/components/Navbar";
 export const metadata: Metadata = {
   title: "Upesh Chalise",
   description: "Upesh Chalise - full stack developer",
+  keywords:[
+    'full-stack',
+    'nodejs',
+    'reactjs',
+  ],
 };
 
 export default function RootLayout({
@@ -28,6 +33,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <meta charSet="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
       <body
         className={`font-mono antialiased bg-[#24262B] flex flex-1 h-screen`}
       >
