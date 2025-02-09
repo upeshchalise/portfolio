@@ -111,3 +111,4 @@ export const MongodbIcon = forwardRef<SVGSVGElement, SVGProps<SVGSVGElement>>(
     );
   }
 );
+ MongodbIcon.displayName= "MongodbIcon"

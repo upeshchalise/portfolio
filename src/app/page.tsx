@@ -6,7 +6,6 @@ import { PostgresqlIcon } from "@/components/icons/postgresql-icon";
 import { ReactIcon } from "@/components/icons/react-icon";
 import { TypescriptIcon } from "@/components/icons/typescript-icon";
 import { Skill } from "@/components/Skill";
-import { useMemo } from "react";
 
 const skills = [
 {icon:JavascriptIcon, name:"Javascript"},

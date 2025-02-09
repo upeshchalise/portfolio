@@ -39,3 +39,5 @@ export const NextjsIcon = forwardRef<SVGSVGElement, SVGProps<SVGSVGElement>>((pr
       </svg>
     )
 })
+
+NextjsIcon.displayName = "NextjsIcon"

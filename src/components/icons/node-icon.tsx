@@ -22,3 +22,5 @@ export const NodeIcon = forwardRef<SVGSVGElement, SVGProps<SVGSVGElement>>(
     );
   }
 );
+
+NodeIcon.displayName = "NodeIcon"

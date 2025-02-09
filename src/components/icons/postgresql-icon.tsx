@@ -31,3 +31,5 @@ export const PostgresqlIcon = forwardRef<SVGSVGElement, SVGProps<SVGSVGElement>>
     );
   }
 );
+
+PostgresqlIcon.displayName = "PostgresqlIcon"

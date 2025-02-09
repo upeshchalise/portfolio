@@ -20,3 +20,5 @@ export const ReactIcon = forwardRef<SVGSVGElement, SVGProps<SVGSVGElement>>(
     );
   }
 );
+
+ReactIcon.displayName = "ReactIcon"

@@ -13,3 +13,5 @@ export const JavascriptIcon =forwardRef<
     </svg>
   );
 });
+
+JavascriptIcon.displayName = "JavascriptIcon"

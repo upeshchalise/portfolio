@@ -1,6 +1,6 @@
 "use client";
 
-import { File, Folder, ChevronDown, ChevronRight, FolderIcon, FileIcon } from "lucide-react";
+import { ChevronDown, ChevronRight, FolderIcon, FileIcon } from "lucide-react";
 import { SiEslint } from "react-icons/si";
 import { TbBrandNpm } from "react-icons/tb";
 import Link from "next/link";
@@ -8,7 +8,6 @@ import { ReactIcon } from "./icons/react-icon";
 import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import path from "path";
 
 interface FileItems {
   name: string;
