@@ -3,6 +3,7 @@ import { Experince } from "@/lib/experience"
 import { cn } from "@/lib/utils"
 
 const About = () => {
+  const experience = new Date().getFullYear() - 2023;
     return (
         <>
  <div className="max-w-4xl">
@@ -12,7 +13,7 @@ const About = () => {
         <span className="text-purple-400">introduction </span>
         <span className="text-muted-foreground">= </span>
         <span className="text-orange-400">
-          &quot;Passionate programmer and Full-Stack Developer with 2+ years of
+          &quot;Passionate programmer and Full-Stack Developer with <span>{experience}</span>+ years of
           experience. Achieved a track record of success in developing scalable
           web applications. Experienced in maintaining and refactoring legacy
           systems, as well as developing new systems for making initial launch
