@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     'full-stack',
     'nodejs',
     'reactjs',
+    'upesh chalise',
+    'Upesh Chalise',
+    'Upeshchalise - full stack developer'
   ],
 };
 
