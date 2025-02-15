@@ -13,7 +13,7 @@ const Project = () => {
           <span className="text-muted-foreground">= {`[`} </span>
         </div>
         <div>
-          {Projects.map((item, _index) => {
+          {Projects.map((item) => {
             return (
               <>
                 <div
