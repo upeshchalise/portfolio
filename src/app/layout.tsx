@@ -20,12 +20,13 @@ export const metadata: Metadata = {
   title: "Upesh Chalise",
   description: "Upesh Chalise - full stack developer",
   keywords:[
+    'upesh chalise',
+    'Upesh Chalise',
+    'upeshchalise',
+    'Upeshchalise - full stack developer',
     'full-stack',
     'nodejs',
     'reactjs',
-    'upesh chalise',
-    'Upesh Chalise',
-    'Upeshchalise - full stack developer'
   ],
 };
 
@@ -39,6 +40,31 @@ export default function RootLayout({
       <head>
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="author" content="Upesh Chalise" />
+      <meta name="copyright" content="Upesh Chalise" />
+      <meta
+            name="description"
+            content={
+              "Upesh Chalise is a 2+ Years Experienced Full Stack Developer. He is a professional developer from Nepal who loves to play around with web apps."
+            }
+          />
+          <meta property="og:title" content="Upesh Chalise - Full Stack Developer" />
+          <meta
+            property="og:description"
+            content={
+              "Upesh Chalise is a 2+ Years Experienced Full Stack Developer. He is a professional developer from Nepal who loves to play around with web apps."
+            }
+          />
+      <meta
+            property="twitter:title"
+            content="Upesh Chalise - Full Stack Developer"
+          />
+          <meta
+            property="twitter:description"
+            content={
+              "Upesh Chalise is a 2+ Years Experienced Full Stack Developer. He is a professional developer from Nepal who loves to play around with web apps."
+            }
+          />
       </head>
       <body
         className={`font-mono antialiased bg-[#24262B] flex flex-1 h-screen`}
