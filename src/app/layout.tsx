@@ -67,9 +67,9 @@ export default function RootLayout({
           />
       </head>
       <body
-        className={`font-mono antialiased bg-[#24262B] flex flex-1 h-screen`}
+        className={`font-mono antialiased bg-[#24262B] h-screen`}
       >
-        <div className="flex flex-1 min-h-screen flex-col">
+        <div className="flex min-h-screen flex-col">
 
         <Header />
 
