@@ -1,7 +1,6 @@
 import React from "react";
 import { SiGnubash } from "react-icons/si";
-import { Input } from "./ui/input";
-import { CiSearch, CiStar } from "react-icons/ci";
+import { CiStar } from "react-icons/ci";
 
 const Header = () => {
   return (
