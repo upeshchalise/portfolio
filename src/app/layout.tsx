@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import { SideNav } from "@/components/Sidenav";
 import { Explorer } from "@/components/Explorer";
 import { Navbar } from "@/components/Navbar";
-
+import { Analytics } from "@vercel/analytics/react"
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
 //   subsets: ["latin"],
@@ -82,6 +82,7 @@ export default function RootLayout({
               <div className="bg-[#181A1F] flex-1 rounded-md p-2 flex flex-col gap-3">
                 <Navbar />
                 {children}
+                <Analytics />
               </div>
             </div>
           </main>
