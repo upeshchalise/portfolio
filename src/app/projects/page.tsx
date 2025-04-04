@@ -12,10 +12,9 @@ const Project = () => {
           <span className="text-purple-500">Projects</span>{" "}
           <span className="text-muted-foreground">= {`[`} </span>
         </div>
-        <div>
+        <div className="flex flex-col gap-5">
           {Projects.map((item) => {
             return (
-              <>
                 <div
                   key={item.id}
                   className="flex hover:border gap-5 hover:border-white rounded-lg bg-slate-800 hover:bg-slate-700"
@@ -37,25 +36,24 @@ const Project = () => {
                     <div className="text-2xl font-bold">{item.name}</div>
                     <div className="text-muted-foreground">{item.description}</div>
                     <div className="flex gap-2">
-                      {item.technology.map((item, index) => {
+                      {item.technology.map((item) => {
                         return (
                           <>
-                            <span className="bg-slate-500 px-2 rounded-md" key={index}>{item}</span>
+                            <span className="bg-slate-500 px-2 rounded-md" key={item}>{item}</span>
                           </>
                         );
                       })}
                     </div>
                     <div className="flex gap-3">
-                      <Link href={item.source} className="flex gap-2 text-muted-foreground">
+                      {item.source &&<Link href={item.source} className="flex gap-2 text-muted-foreground">
                         <Github /> Source
-                      </Link>
+                      </Link>}
                       <Link href={item.demo} className="flex gap-2 text-muted-foreground">
                         <Globe /> Demo
                       </Link>
                     </div>
                   </div>
                 </div>
-              </>
             );
           })}
         </div>

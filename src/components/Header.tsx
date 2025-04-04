@@ -1,6 +1,5 @@
 import React from "react";
 import { SiGnubash } from "react-icons/si";
-import { CiStar } from "react-icons/ci";
 
 const Header = () => {
   return (
@@ -24,11 +23,11 @@ const Header = () => {
             />
           </div> */}
         </div>
-        <div className="flex gap-1 items-center text-lg">
+        {/* <div className="flex gap-1 items-center text-lg">
           <span>1 </span>
           <CiStar size={20} />
           <span>stars!</span>
-        </div>
+        </div> */}
       </section>
     </>
   );

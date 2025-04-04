@@ -8,4 +8,12 @@ export const Projects = [
     image: "/portfolio.png",
     technology: ["Next.js", "typescript", "Tailwind css", "shadcn ui"],
   },
+  {
+    id: 2,
+    name: "Image Things",
+    description: "Image manipulation app built on nextjs, nodejs and express. You can compress, convert images and more.",
+    demo: "https://image-as-i-want.vercel.app/",
+    image: "/image-as-i-want.png",
+    technology: ["Next.js", "typescript", "Tailwind css", "shadcn ui", "node.js", "express"],
+  }
 ];
