@@ -67,7 +67,7 @@ const SidebarMenu = ({
 }) => (
   <ul
     className={cn(
-      "flex w-full flex-col items-center gap-4",
+      "flex w-full flex-col items-center",
       className
     )}
   >
@@ -75,11 +75,9 @@ const SidebarMenu = ({
   </ul>
 )
 
-const SidebarMenuItem = ({
-  children,
-}: {
-  children: React.ReactNode
-}) => <li className="w-auto rounded-lg">{children}</li>
+const SidebarMenuItem = ({ children }: { children: React.ReactNode }) => (
+  <li className="w-auto rounded-lg">{children}</li>
+)
 
 const SidebarMenuButton = ({
   children,
@@ -95,8 +93,8 @@ const SidebarMenuButton = ({
   return (
     <Comp
       className={cn(
-        "flex h-12 w-12 items-center justify-center rounded-lg p-2",
-        "hover:bg-[#181A1F]",
+        "flex h-10 w-10 items-center justify-center rounded-md p-2",
+        "hover:bg-[#2a2d2e]",
         className
       )}
     >

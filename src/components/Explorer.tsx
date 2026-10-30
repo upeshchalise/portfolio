@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronDown, ChevronRight, FolderIcon, FileIcon } from "lucide-react";
+import { ChevronDown, ChevronRight, FolderIcon, FileIcon, MoreHorizontal } from "lucide-react";
 import { SiEslint } from "react-icons/si";
 import { TbBrandNpm } from "react-icons/tb";
 import Link from "next/link";
@@ -169,7 +169,7 @@ const LinkItem = ({
     return (
       <Link
       className={cn(
-        "flex cursor-pointer items-center gap-1 py-1 rounded-md hover:bg-hover",
+        "flex cursor-pointer items-center gap-1 rounded-sm py-1 text-[13px] text-[#cccccc] hover:bg-[#2a2d2e]",
         isActive &&
           "bg-background text-foreground hover:bg-active-hover font-bold",
         level > 0 && "ml-4"
@@ -185,7 +185,7 @@ const LinkItem = ({
   return (
     <div
       className={cn(
-        "flex cursor-pointer items-center gap-1 py-1 rounded-md hover:bg-hover",
+        "flex cursor-pointer items-center gap-1 rounded-sm py-1 text-[13px] text-[#cccccc] hover:bg-[#2a2d2e]",
         isActive &&
           "bg-background text-foreground hover:bg-active-hover font-bold",
         level > 0 && "ml-4"
@@ -203,10 +203,13 @@ export const Explorer = () => {
   return (
     <>
       <section
-        className="thin-scrollbar max-h-48 w-full shrink-0 overflow-y-auto rounded-md bg-[#181A1F] px-4 py-2 text-lg text-white sm:min-h-screen sm:max-h-none sm:w-auto"
+        className="thin-scrollbar max-h-56 w-full shrink-0 overflow-y-auto border-b border-[#333333] bg-[#252526] text-white sm:min-h-screen sm:max-h-none sm:w-60 sm:border-b-0 sm:border-r"
         id="explorer-section"
       >
-        <div>EXPLORER</div>
+        <div className="flex h-9 items-center justify-between px-3 text-[11px] font-medium tracking-wide text-[#bbbbbb]">
+          <span>EXPLORER</span>
+          <MoreHorizontal size={16} className="text-[#858585]" />
+        </div>
         {/* <ul className="[&>_li]:flex [&>_li]:gap-2 [&>_li]:items-center">
           <li className="flex gap-2 items-center">
             <span></span>
@@ -237,7 +240,11 @@ export const Explorer = () => {
           </li>
         </ul> */}
 
-          <div className="flex-1 px-2">
+          <div className="px-2">
+            <div className="mb-1 flex items-center gap-1 px-1 text-[11px] font-semibold tracking-wide text-[#cccccc]">
+              <ChevronDown size={14} />
+              <span>UPESH CHALISE</span>
+            </div>
             {files.map((file) => {
               return (
                 <FileTreeItem key={file.path} item={file} />

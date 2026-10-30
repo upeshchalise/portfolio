@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
-import { SideNav } from "@/components/Sidenav";
-import { Explorer } from "@/components/Explorer";
+import { SidebarWorkspace } from "@/components/SidebarWorkspace";
 import { Navbar } from "@/components/Navbar";
 import { Analytics } from "@vercel/analytics/react"
 // const geistSans = Geist({
@@ -71,13 +70,12 @@ export default function RootLayout({
 
         <Header />
 
-        <div className="flex flex-1 flex-row gap-3">
-          <SideNav />
+        <div className="flex flex-1 flex-col sm:flex-row">
+          <SidebarWorkspace />
 
           <main className="min-w-0 flex-1">
             <div className="flex min-w-0 flex-col gap-4 text-white sm:flex-row">
-              <Explorer />
-              <div className="flex min-w-0 flex-1 flex-col gap-3 overflow-hidden rounded-md bg-[#181A1F] p-2">
+              <div className="flex min-w-0 flex-1 flex-col overflow-hidden bg-[#1e1e1e]">
                 <Navbar />
                 {children}
                 <Analytics />
