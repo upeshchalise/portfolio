@@ -25,7 +25,7 @@ interface SideNavProps {
 
 export const SideNav = ({ explorerOpen, onExplorerToggle }: SideNavProps) => {
   return (
-    <SidebarProvider className="h-auto w-full sm:h-full sm:w-auto">
+    <SidebarProvider className="md:min-h-[calc(100vh-44px)] w-full sm:h-full sm:w-auto">
       <Sidebar id="sidenav" className="w-full border-b border-[#333333] bg-[#181818] sm:w-12 sm:border-b-0 sm:border-r">
         <SidebarContent>
           <SidebarMenu className="flex-row justify-around gap-0 py-1 sm:flex-col sm:justify-start sm:gap-2 sm:py-3">

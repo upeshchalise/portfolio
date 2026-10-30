@@ -74,7 +74,7 @@ export default function RootLayout({
           <SidebarWorkspace />
 
           <main className="min-w-0 flex-1">
-            <div className="flex min-w-0 flex-col gap-4 text-white sm:flex-row">
+            <div className="flex min-w-0 flex-col gap-4 text-white sm:flex-row md:min-h-full">
               <div className="flex min-w-0 flex-1 flex-col overflow-hidden bg-[#1e1e1e]">
                 <Navbar />
                 {children}

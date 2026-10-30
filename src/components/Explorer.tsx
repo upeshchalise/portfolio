@@ -203,7 +203,7 @@ export const Explorer = () => {
   return (
     <>
       <section
-        className="thin-scrollbar max-h-56 w-full shrink-0 overflow-y-auto border-b border-[#333333] bg-[#252526] text-white sm:min-h-screen sm:max-h-none sm:w-60 sm:border-b-0 sm:border-r"
+        className="thin-scrollbar max-h-56 w-full shrink-0 overflow-y-auto border-b border-[#333333] bg-[#252526] text-white sm:min-h-screen sm:max-h-none sm:w-60 sm:border-b-0 sm:border-r md:min-h-[calc(100vh-44px)]"
         id="explorer-section"
       >
         <div className="flex h-9 items-center justify-between px-3 text-[11px] font-medium tracking-wide text-[#bbbbbb]">
