@@ -66,20 +66,18 @@ export default function RootLayout({
             }
           />
       </head>
-      <body
-        className={`font-mono antialiased bg-[#24262B] h-screen`}
-      >
+      <body className="font-mono antialiased bg-[#24262B] min-h-screen overflow-x-hidden">
         <div className="flex min-h-screen flex-col">
 
         <Header />
 
-        <div className="flex gap-3 flex-1 ">
+        <div className="flex flex-1 flex-row gap-3">
           <SideNav />
 
-          <main className="flex-1">
-            <div className="text-white flex gap-4">
+          <main className="min-w-0 flex-1">
+            <div className="flex min-w-0 flex-col gap-4 text-white sm:flex-row">
               <Explorer />
-              <div className="bg-[#181A1F] flex-1 rounded-md p-2 flex flex-col gap-3">
+              <div className="flex min-w-0 flex-1 flex-col gap-3 overflow-hidden rounded-md bg-[#181A1F] p-2">
                 <Navbar />
                 {children}
                 <Analytics />

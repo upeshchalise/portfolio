@@ -17,9 +17,9 @@ const Project = () => {
             return (
                 <div
                   key={item.id}
-                  className="flex hover:border gap-5 hover:border-white rounded-lg bg-slate-800 hover:bg-slate-700"
+                  className="flex flex-col gap-5 rounded-lg bg-slate-800 hover:border hover:border-white hover:bg-slate-700 sm:flex-row"
                 >
-                  <div className=" w-64 h-64 relative">
+                  <div className="relative h-48 w-full shrink-0 sm:h-64 sm:w-64">
                     <Image
                       src={item.image}
                       alt="image of Upesh Chalise portfolio project"

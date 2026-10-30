@@ -4,16 +4,16 @@ import { SiGnubash } from "react-icons/si";
 const Header = () => {
   return (
     <>
-      <section className="flex justify-between text-white py-2 px-4" id="header">
-        <div className="flex gap-10">
+      <section className="flex justify-between px-3 py-2 text-white sm:px-4" id="header">
+        <div className="flex min-w-0 gap-4 sm:gap-10">
           <div className="flex items-center gap-2">
             <div className="h-3 w-3 rounded-full bg-red-500" />
             <div className="h-3 w-3 rounded-full bg-yellow-500" />
             <div className="h-3 w-3 rounded-full bg-green-500" />
           </div>
-          <div className="flex gap-3 items-center">
+          <div className="flex min-w-0 items-center gap-3">
             <SiGnubash size={28} />
-            <span className="text-lg">Upesh Chalise</span>
+            <span className="truncate text-lg">Upesh Chalise</span>
           </div>
           {/* <div className="flex gap-1 items-center hover:bg-slate-600 rounded-md flex-1 px-1 w-96 text-lg">
             <CiSearch size={20} />

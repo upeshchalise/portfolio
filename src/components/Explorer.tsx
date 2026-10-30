@@ -203,7 +203,7 @@ export const Explorer = () => {
   return (
     <>
       <section
-        className="bg-[#181A1F]  rounded-md py-2 text-lg px-4 text-white hidden sm:block sm:min-h-screen min-h-full"
+        className="thin-scrollbar max-h-48 w-full shrink-0 overflow-y-auto rounded-md bg-[#181A1F] px-4 py-2 text-lg text-white sm:min-h-screen sm:max-h-none sm:w-auto"
         id="explorer-section"
       >
         <div>EXPLORER</div>

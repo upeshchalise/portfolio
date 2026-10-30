@@ -4,8 +4,8 @@ import { FaReact } from "react-icons/fa";
 export const Navbar = () => {
   return (
     <>
-      <section id="navbar">
-      <ul className="flex gap-2">
+      <section className="thin-scrollbar min-w-0 overflow-x-auto" id="navbar">
+      <ul className="flex w-max gap-2">
       <li>
         <Link href={"/"}>
           <p className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-slate-800 hover:cursor-pointer">
